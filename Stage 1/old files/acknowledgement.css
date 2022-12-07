@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Montserrat:wght@100&display=swap');
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    font-family: 'Inter', sans-serif;
+}
+.container-tile{
+    color: black;
+    font-family: 'Boogaloo', cursive;
+    font-size: 48px;
+    margin-top: 50px;
+}
+
+.confirm{
+    font-size: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;  
+}
+
+button{
+    color: white;
+    font-size: 20px;
+
+    height: 50px;
+    width: 175px;
+    border-radius: 15px;
+    background-color: rgba(238,29,82, 0.9);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    margin-top: 100px;
+}
+input {
+    border: 2px solid #000;
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 12px;
+}

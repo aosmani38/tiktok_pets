@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Montserrat:wght@100&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* put the colors in CSS variables */
+    --ttmagenta: rgba(238, 29, 82, 0.8);
+    --cyan : rgb(105, 201, 208);
+}
+
+header{
+    color: black;
+    font-size: 48px;
+    font-family: 'Boogaloo', cursive;
+    margin: 50px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video{
+    width: 325px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--ttmagenta);
+}
+
+.foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 50px;
+}
+
+#captions{
+    color: white;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+#reload {
+    color: var(--ttmagenta);
+    background-color: white;
+    font-size: 75px;
+}
+button#reload:hover {
+    color: var(--cyan);
+}
+
+button#cont {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--ttmagenta);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: absolute;
+    right: 100px;
+}
+button#cont:hover {
+    background-color: var(--cyan);
+}
+
+blockquote {
+    border-style: solid;
+    border-color:  var(--ttmagenta);
+    border-width: 2px;
+    border-radius: 10px;
+    background-color:var(--ttmagenta);
+}
+  
+iframe {
+    margin-top: -1px;
+    margin-left: -1px;
+}
+
+@media(max-width: 900px){
+    .foot{
+        flex-direction: column;
+    }
+    button#cont{
+        position: inherit;
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 415px){
+    header{
+        font-size: 32px;
+    }
+    #captions{
+        font-size: 18px;
+    }
+    button#cont{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Montserrat:wght@100&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* put the colors in CSS variables */
+    --ttmagenta: rgba(238, 29, 82, 0.8);
+    --cyan : rgb(105, 201, 208);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+#title_name{
+    color: black;
+    font-size: 48px;
+    font-family: 'Boogaloo', cursive;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#head{
+    color: black;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    margin: 50px; 
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.inbox{
+    margin: 10px;
+}
+
+.nickDelete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px;
+}
+.nname{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+
+    width: 350px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid black;
+    padding-left: 15px;
+}
+.delete{
+    color: var(--ttmagenta);
+    font-size: 64px;
+    font-family: 'Boogaloo';
+
+    height: auto;
+    width: auto;
+    border-radius: 0%;
+    background-color: white;
+    box-shadow: none;
+
+    margin-left: 10px;
+}
+
+button#home {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--ttmagenta);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: absolute;
+    right: 100px;
+}
+
+button#pgame {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--ttmagenta);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+
+button.delete:hover {
+    color: var(--cyan);
+}
+button#home:hover {
+    background-color: var(--cyan);
+}
+button#pgame:hover {
+    background-color: var(--cyan);
+}
+
+@media(max-width: 900px){
+    .box{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .inbox{
+        margin: 1px;
+    }
+    .nickDelete{
+        margin: 0px;
+    }
+    .delete{
+        font-size: 60px;
+    }
+}
+
+@media(max-width: 690px){
+    button#home {
+        position: inherit;
+        margin-left: 75px;
+    }
+    #title_name{
+        font-size: 32px;
+    }
+    .nname{
+        width: 250px;
+    }
+    button#home{
+        font-size: 16px;
+    }
+    button#pgame{
+        font-size: 16px;
+    }
+}

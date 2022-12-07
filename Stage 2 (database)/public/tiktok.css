@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    /* put the colors in CSS variables */
+    --ttmagenta: rgba(238, 29, 82, 0.8);
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  button {
+    background-color: var(--ttmagenta);
+    color: white;
+    font-family: sans-serif;
+    width: 100px;
+    height: 45px; 
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+  div.video {
+    width: 325px;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: var(--ttmagenta);
+  }
+  
+  .cntn-btn-reld-icn{
+    display:flex;
+    flex-direction: row;
+  }

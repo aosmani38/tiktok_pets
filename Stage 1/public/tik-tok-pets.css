@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Montserrat:wght@100&display=swap');
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+#title_name{
+    color: black;
+    font-size: 48px;
+    font-family: 'Boogaloo', cursive;
+    position: relative;
+}
+#my_vid_btn{
+    position:absolute;
+    right: 100px;
+}
+
+.submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    font-family: 'Inter', sans-serif;
+
+    height: 500px;
+    width: 500px;
+    background: linear-gradient(120deg,rgb(238, 29, 82, 0.9),rgb(105, 201,208));
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    border: 1px;
+    border-radius: 20px;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#label{
+    font-size: 24px;
+    margin: 50px;
+}
+
+.confirm{
+    color: black;
+    font-size: 40px;
+    font-family: 'Boogaloo', cursive;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#nickName{
+    color: rgba(238, 29, 82, 0.9);
+}
+
+button{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    background-color: rgba(238,29,82, 0.9);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+input {
+    border: 1px transparent;
+    width: 350px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 12px;
+    padding-left: 10px;
+}
+
+input:focus {
+    outline: none !important;
+    border:1px solid rgb(105, 201,208);
+}
+
+@media(max-width: 900px){
+    #my_vid_btn{
+        position: inherit;
+        margin-left: 100px;
+    }
+}
+
+@media(max-width: 534px){
+    #title_name{
+        font-size: 32px;
+    }
+    #my_vid_btn{
+        margin-left: 50px;
+    }
+
+    .submit{
+        height: 400px;
+        width: 350px;
+        margin-top: 50px;
+    }
+    #label{
+        margin-bottom: 20px;
+    }
+
+    #confirm{
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    button{
+        font-size: 16px;
+        width: 125px;
+    }
+    input{
+        width: 300px;
+    }
+}

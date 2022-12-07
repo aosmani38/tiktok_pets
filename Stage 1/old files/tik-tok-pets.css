@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Montserrat:wght@100&display=swap');
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    margin-top:50px;
+}
+.container-tile{
+    flex: 2;
+    text-align: center;
+    margin-left: 250px;
+}
+#logo-title-content{
+    color: black;
+    font-family: 'Boogaloo', cursive;
+    font-size: 48px;
+}
+.container-my-videos{
+    margin-right: 100px;
+}
+
+main{
+    margin-top: 100px;
+}
+.form-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    border: 1px;
+    border-radius: 20px;
+    text-align: center;
+    height: 500px;
+    width: 500px;
+    background: linear-gradient(120deg,rgba(238, 29, 82, 0.9),rgb(105, 201,208));
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+    margin-bottom: 50px;
+}
+.formdiv-1{
+    font-size: 24px;
+}
+.formdiv-2{
+    font-size: 16px;
+    align-self: center;
+    text-align: left;
+    margin-top: 40px;
+}
+
+button{
+    color: white;
+    font-size: 20px;
+
+    height: 50px;
+    width: 175px;
+    border-radius: 15px;
+    background-color: rgba(238,29,82, 0.9);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+input {
+    border: 2px solid #000;
+    width: 400px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+@media(max-width: 900px){
+    .container-tile{
+        margin-left: -50px;
+    }
+    .container-my-videos{
+        margin-right: 75px;
+    }
+    button{
+        width: 150px;
+    }
+}
+
+@media(max-width: 500px){
+    .container-tile{
+        flex: 1;
+    }
+    .container-my-videos{
+        margin-right: 45px;
+    }
+    #logo-title-content{
+        font-size: 32px;
+    }
+    main{
+        margin-top: 50px;
+    }
+    form{
+        height: 400px;
+        width: 100px;
+    }
+    .formdiv-1{
+        font-size: 20px;
+    }
+    .formdiv-2{
+        margin-top: 20px;
+    }
+    button{
+        font-size: 16px;
+        width: 125px;
+    }
+    input{
+        width: 300px;
+    }
+}
